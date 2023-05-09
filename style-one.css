@@ -1,0 +1,23 @@
+
+* {
+    font-family: 'leelawadee';
+}
+
+#logo-cabecera {
+    height: 200px;
+    float: right;
+    top: 15px;
+}
+
+#logoLetras-cabecera{
+    height: 250px;
+    float: left;
+    top: 15px;
+}
+#encabezado{
+    background: linear-gradient(#07d315, #f9faf9, #04b310);
+    height: 200px;
+    color: white;
+    text-align: center;
+    
+}
