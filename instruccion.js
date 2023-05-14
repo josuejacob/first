@@ -49,8 +49,8 @@
 
 // TABLA DE MULTIPLICAR CON FOR
 
-var multiplicador = 1;
+// var multiplicador = 1;
 
-for (multiplicador; multiplicador<=11; multiplicador++) {
-    document.write(multiplicador*5);
-}
+// for (multiplicador; multiplicador<=11; multiplicador++) {
+//     document.write(multiplicador*5);
+// }
