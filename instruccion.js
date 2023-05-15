@@ -1,56 +1,74 @@
-// function prueba(oracion) {
 
-//     document.write('Hola mundo de Jacob')
-//     document.write('<br>')
-//     document.write(oracion)
-
+// const user = {
+//     name: 'Josue',
+//     lastname: 'Jacob',
+//     age: 25,
+//     adress : {
+//         country : 'Mexico',
+//         state : 'Morelos',
+//         city : 'Cuernavaca',
+//         stret : 'Paseo Chetumal'
+//     },
+//     hobbies: ['Futbol', 'Cine', 'Cine y Futbol'],
+//     getInfo: function () {
+//         return this.name + ' ' + this.lastname + ' tiene ' + this.age + ' años y viven en ' + this.adress.state + ', ' + this.adress.city + ', ' + this.adress.country
+//     }
 // }
 
-// prueba('Hola a todo mundo y ');
-// prueba('NUEVA PÁGINA WEB');
+// console.log(user.getInfo());
 
-// AQUI CALCULAMOS EL INDICE DE MASA CORPORAL USANDO FUNCIONES
-// 
 
-// function calcularImc(peso,altura,nombre)  {
-//     var imc = peso / altura
-//     document.write('El índice de masa corporal de ' + nombre + ' es ' + imc);
+// const nombre = 'Josue';
+// const edad = 24;
+
+// const person = {
+//     nombre,
+//     edad
 // }
 
-// calcularImc(68,1.71,"Jacob");
+// console.log(person.edad);
 
-//HACEMOS USO DE PROMPT PARA INGRESAR DATOS Y LEERLOS
 
-// nomb = prompt('Ingresa tu nombre:');
-// weight = parseInt(prompt('Ingresa tu peso'));
-// height = parseInt(prompt('Ingresa tu altura'));
 
-// function calculo(peso,altura) {
-//     let imc =  peso / (altura*altura)
-//     return(imc);
+// const title = document.createElement('h1');
+// title.innerText = 'Escribir en html'
+
+// const button = document.createElement('button');
+// button.innerText = 'click'
+
+// button.addEventListener("click", function() {
+//     const p = document.createElement('p');
+//     p.innerText = 'Hola mundo html'
+//     document.body.appendChild(p);
+// })
+
+// document.body.append(title);
+// document.body.append(button);
+
+
+
+// const user = {
+//     name: 'Josue',
+//     lastname: 'Jacob',
+//     age: 24,
 // }
 
-// function escribir(nombre){
-//     document.write('El índice de masa corporal de '+ nombre + ' es ' + calculo(weight,height));
+// function printInfo(user) {
+//     return "<h1>Hola " + user.name + ' ' + user.lastname + ' </h1'
 // }
 
-// escribir(nomb);
+// document.body.innerHTML = printInfo(user);
 
-/// JUEGO DE ADIVINACIÓN CON MATH.RANDOM Y UTILIZANDO IF ELSE
 
-// var numeroPensado = Math.round(Math.random()*10);
-// var numeroUsuario = parseInt(prompt('Piensa en un número e ingresalo a continuación:'));
+// FUNCIONES SIN NOMBRE DENTRO DE EVENTOS
 
-// if (numeroUsuario == numeroPensado) {
-//         document.write('Felicidades, has adivinado el número pensado por la computadora');
-// } else {
-// document.write('El número no es le mismo, el número correcto es el '+ numeroPensado)
-// }
+const button = document.createElement('button')
+button.innerText = 'Haz click aquí'
 
-// TABLA DE MULTIPLICAR CON FOR
+button.addEventListener('click', () => {
+    const p = document.createElement('p');
+    p.innerText = 'Hola nana en html'
+    document.body.appendChild(p);
+})
 
-// var multiplicador = 1;
-
-// for (multiplicador; multiplicador<=11; multiplicador++) {
-//     document.write(multiplicador*5);
-// }
+document.body.append(button);
