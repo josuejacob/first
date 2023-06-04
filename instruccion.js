@@ -72,3 +72,21 @@ button.addEventListener('click', () => {
 })
 
 document.body.append(button);
+
+function mostrarDiv() {
+        var div = document.getElementById('div_contacto');
+     if (div.style.display === 'none'){
+        div.style.display = 'block';
+    } else{
+        div.style.display = 'none';
+    }
+}
+
+function mostrarCursos(){
+    var div = document.getElementById('div_cursos');
+    if (div.style.display === 'none'){
+        div.style.display = 'block';
+    } else {
+        div.style.display = 'none';
+    }
+}

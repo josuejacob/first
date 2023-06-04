@@ -1,24 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style-one.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <title>PÁGINA PRINCIPAL DE CIPHER-CI</title>
+    <title>CELL CIPHER</title>
 </head>
+
 <body>
-    <h1>Bienvenido a Cipher Ci</h1>
-    <p> Somos una institución dedicada a la divulgación científica, comprometidos con </p>
-    <ul>
-        <li>INICIO</li>
-        <li>NOSOTROS</li>
-        <li>CURSOS </li>
-        <li>CONTACTO</li>
-        <li>OTROS</li>
-    </ul>
+    <header>
+        <div id="div_cabecera">
+            <nav id="nav_cabecera">
+                <img src="img/Cipher-Ci.png" alt="NaN" id="logoCabecera">
+                <img src="img/cell-cipher.png" alt="0" id="logoCabecera_letras">
+                <h1>CELL CIPHER</h1>
+                <p> Descifrando el conocimiento a nivel celular </p>
+                <br>
+                <ul>
+                    <li><a href="">INICIO</a> </li>
+                    <li><a href="">NOSOTROS</a></li>
+                    <li><a href="#" onclick="mostrarDiv()">CONTACTO</a></li>
+                    <li> <a href="">MÁS INFORMACIÓN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <fieldset id="div_contacto">
+        <form action="">
+            <legend style="font-size: 50px;">Nos encantará recibir tu contacto:</legend>
+            <label for="nombre_contacto">Nombre</label>
+            <input type="text" id="nombre_contacto" required placeholder="Josue">
+            <label for="apellido_contacto">Apellido</label>
+            <input type="text" id="apellido_contacto" placeholder="Jacob">
+            <label for="correo_contacto">Correo</label>
+            <input type="email" id="correo_contacto" required placeholder="usuario@cipher-ci.com">
+            <label for="numero_contacto" >Número telefónico</label>
+            <input type="tel" id="numero_contacto" required placeholder="7776003333">
+            <label for="mensaje_contacto">Escriba aquí sus comentarios</label>
+            <textarea name="" cols="93" rows="10" id="mensaje_contacto" placeholder="Escriba aquí sus comentarios"></textarea>
+            <label for="">Selecciona el motivo que mejor represente tu contacto:</label>
+            <select name="" id="">
+                <option value="">Colaboración</option>
+                <option value="">Sugerencias</option>
+                <option value="">Miembro Cipher</option>
+            </select>
+            <fieldset id="div_contacto_medio">
+                <legend>¿Por cual medio desea ser contactado?</legend>
+                <label for="radio_contacto_telefono"><input type="radio" name="radio_contacto" value="Telefono"
+                        id="radio_contacto_telefono">Teléfono</label>
+                <label for="radio"><input type="radio" name="radio_contacto" value="Whatsapp"
+                        id="radio_contacto_whatsapp">Whatsapp</label>
+                <label for="radio"><input type="radio" name="radio_contacto" value="Correo"
+                        id="radio_contacto_correo">Correo</label>
+            </fieldset>
+
+            <label for="politicas_privacidad">Marca la siguiente casilla para aceptar nuestras políticas de privacidad:</label>
+            <input type="checkbox" name="privacidad" id="politicas_privacidad" required>
+            <button>ENVIAR</button>
+        </form>
+    </fieldset>
+
+    <main id="menu_principal">
+        <ul>
+            <li id="cursos" onclick="mostrarCursos()">
+                <p class="titulo_menu_principal">CURSOS</p><br>
+                <img src="img/file-search.png" alt="">
+                <p>Visita nuestra lista de recursos de estudio totalmente libre</p>
+            </li>
+            <li id="proyectos">
+                <p class="titulo_menu_principal">PROYECTOS</p> <br>
+                <img src="img/microscope.png" alt="">
+                <p>Descubre nuestras líneas de investigación y su enfoque</p>
+            </li>
+            <li id="publicaciones">
+                <p class="titulo_menu_principal">PUBLICACIONES</p> <br>
+                <img src="img/message-check.png" alt="">
+                <p>Conócenos más a través de nuestras últimas publicaciones</p>
+            </li>
+        </ul>
+    </main>
+
+
+<div id="div_cursos">
+    <legend style="font-size: 40px;">Conoce nuestros cursos disponibles</legend>
+    <table>
+        <tr>
+            <td>Biología general</td>
+            <td>Química</td>
+            <td>Fisicoquímica</td>
+        </tr>
+        <tr>
+            <td>Bioquímica</td>
+            <td>Biología molecular</td>
+            <td>Biología celular</td>
+        </tr>
+        <tr>
+            <td>Inmunología</td>
+            <td>Virología</td>
+            <td>Genética</td>
+        </tr>
+
+    </table>
+
+</div>
 </body>
+
+<footer>
+    <img src="img/cell-cipher.png" alt="" id="logo_footer">
+    <p> &COPY; 2023 CELL CIPHER </p>
+</footer>
+
 <script src="instruccion.js"></script>
+
 </html>

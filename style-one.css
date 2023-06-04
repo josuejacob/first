@@ -1,4 +1,3 @@
-
 * {
     font-family: 'poppins';
 }
@@ -9,14 +8,192 @@
     top: 15px;
 }
 
-#logoLetras-cabecera{
+#logoLetras-cabecera {
     height: 250px;
     float: left;
     top: 15px;
 }
-#encabezado{
+
+#encabezado {
     height: 200px;
     color: white;
     text-align: center;
-    
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+header h1{
+    font-size: 70px;
+    margin: 2px;
+}
+header p{
+    margin: 2px;
+}
+
+header nav li {
+    display: inline;
+    margin: 0 0 4px 4px;
+    text-decoration: none;
+}
+header nav li a:hover {
+    color: chartreuse;
+}
+
+
+#logoCabecera {
+    float: left;
+    height: 250px;
+    position: relative;
+    padding: 0 10px;
+}
+
+#nav_cabecera {
+    position: relative;
+}
+
+#logoCabecera_letras {
+    float: right;
+    height: 250px;
+}
+#div_cabecera{
+    padding: 10px;
+    border: 20px;
+    position: static;
+    margin: 2px;
+    height: 250px;
+    width: auto;
+    background-color: #0b6379;
+    color: white;
+}
+#menu_principal{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+#menu_principal li {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+    margin: 0 2%;
+    box-sizing: border-box;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#menu_principal img{
+    height: 100px;
+    display: inline-block;
+}
+
+.titulo_menu_principal{
+    font-size: 30px;
+    text-decoration: double;
+    font-weight: bold;
+}
+
+#menu_principal li:hover{
+    border-color: #1aa613;
+    background-color: #1aa613;
+    color:white;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#menu_principal li:active{
+    border-color: #0b6379;
+    background-color: #0b6379;
+    color:white;
+    cursor: pointer;
+}
+footer{
+    background-color: #0b6379;
+    text-align: center;
+}
+
+#logo_footer {
+    height: 400px;
+}
+footer p{
+    text-decoration: double;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    color: white;
+}
+form{
+    margin: 40px;
+}
+#div_contacto {
+    display: none;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+}
+
+#div_contacto label{
+    display: block;
+    margin-bottom: 10px;
+}
+#div_contacto input{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#div_contacto_medio label{
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#div_contacto button{
+    width: 40%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    background-color: #0c074e;
+    border: none;
+    border-radius: 30px;
+}
+#div_contacto button:hover{
+    background-color: #1aa613;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#div_cursos {
+    display: block;
+    text-align: center;
+}
+
+#div_cursos table{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#div_cursos table td{
+    padding: 10px;
+    padding-bottom: 300px;
+    border-color: #0b6379;
+    background-color: #0b6379;
+    color: white;
+    border-radius: 30px;
+    font-size: 23px;
 }
